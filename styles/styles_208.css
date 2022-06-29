@@ -1,0 +1,226 @@
+
+
+* {
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    color: black;
+
+}
+body{
+    background-color: #f1f1f9;
+}
+.navbar{
+    height:80px;
+    background-color:white;
+    display:grid;
+    grid-template-columns:50% 50%;
+}
+
+
+.reseaux{
+    display:flex;
+    justify-content:end;
+}
+
+.reseaux i{
+    font-size: 40px;
+    color: #004924;
+    cursor: pointer ;
+    margin: 15px 15px 0 0;
+}
+
+.reseaux i:hover{
+    color: #151515;
+    transition-duration: 0.5s;
+}
+.logo{
+    display: flex;
+}
+
+.pages{
+    display: flex;
+    margin:auto auto auto 3%;
+}
+
+.pages a{
+    font-size: 25px;
+    margin:0 15px 0 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pages a:hover{
+    margin-top: -3px;
+    border-bottom: 3px solid #004924;
+    transition-duration: all .5s ease-in;
+}
+
+
+.logo img{
+    margin: 0px;
+    width: 300px;
+    height: 80px;
+}
+
+.logo img:hover{
+    cursor: pointer;
+}
+
+.banniere{
+    width: 100vw;
+    height: 40vh;
+    background-image: url(/images/banniere_208.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inter{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inter a{
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 15px;
+    color: black;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    margin: auto;
+    width: 65vw;
+    background-color: white;
+    margin-bottom: 150px;
+    box-shadow: 15px 15px  15px 15px #d7d7d7 ;
+} 
+.border_haut{ 
+    position: absolute;
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: #004924;
+    top: -5%;
+    left: -3%;
+    z-index: 10;
+}
+
+.border_bottom{
+    position: absolute;
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: #004924;
+    bottom: -5%;
+    right: -3%;
+    z-index: 10;
+}
+/*slider*/
+.slider {
+    margin-left: 15px;
+    width: 40vw;
+    margin-top: 15px;
+}
+.slider-viewport {
+    margin-top: 15px ;
+    width: 40vw;
+    height: 50vh;
+    overflow: hidden;
+}
+
+.slider-content {
+    display: grid;
+    grid-auto-flow: column;
+    transition: 1s all;
+}
+.slider-content img {
+    width: 40vw;
+    height: 50vh;
+}
+
+.slider-nav {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+.slider-nav a {
+    display: inline-block;
+    background-image: url(/images/peugeot-208-a.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 5vw;
+    height: 10vh;
+    margin:  3px;
+}
+.slider-nav a:hover {
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
+}
+
+#img2:target .slider-content {
+    transform: translateX(-40vw);
+}
+#img3:target .slider-content {
+    transform: translateX(-80vw);
+}
+
+#img4:target .slider-content {
+    transform: translateX(-120vw);
+}
+
+#img5:target .slider-content {
+    transform: translateX(-160vw);
+}
+
+
+/*information a droite du slider en grand ecran*/
+.aside_info{
+    position: relative;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.aside_info .title_aside{
+    width: 100%;
+    text-align: center;
+}
+
+.aside_information{
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+.aside_information li{
+    padding: 20px;
+}
+
+
+.button a{
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #004924;
+    margin-top: 4%;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.button a:hover{
+    box-shadow: 5px 5px 5px 5px #d7d7d7;
+    transition: all .5s;
+}
+
+footer{
+    width: 100%;
+    height: 30vh;
+    background-color: #004924;
+}

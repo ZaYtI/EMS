@@ -1,0 +1,172 @@
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+    color: black;
+}
+body{
+    background-color: #f1f1f9;
+}
+
+.navbar{
+    height:80px;
+    background-color:white;
+    display:grid;
+    grid-template-columns:50% 50%;
+}
+
+
+.reseaux{
+    display:flex;
+    justify-content:end;
+}
+
+.reseaux i{
+    font-size: 40px;
+    color: #004924;
+    cursor: pointer ;
+    margin: 15px 15px 0 0;
+}
+
+.reseaux i:hover{
+    color: #151515;
+    transition-duration: 0.5s;
+}
+.logo{
+    display: flex;
+}
+
+.pages{
+    display: flex;
+    margin:auto auto auto 3%;
+}
+
+.pages a{
+    font-size: 25px;
+    margin:0 15px 0 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pages a:hover{
+    margin-top: -3px;
+    border-bottom: 3px solid #004924;
+    transition-duration: all .5s ease-in;
+}
+
+
+.logo img{
+    margin: 0px;
+    width: 300px;
+    height: 80px;
+}
+
+.logo img:hover{
+    cursor: pointer;
+}
+
+.banniere{
+    width: 100vw;
+    height: 50vh;
+    background-image: url(/images/bmw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inter{
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inter a{
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+    color: black;
+}
+
+.container{
+    margin-top:0px;
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 150px ;
+}
+
+
+.Location_Voiture{
+    display: grid;
+    margin: auto;
+    width: 80vw;
+    height: 100%;
+    background-color: white;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    position: relative;
+    box-shadow: 15px 15px  15px 15px #d7d7d7 ;
+    align-items: center;
+}
+
+.border_haut{ 
+    position: absolute;
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: #004924;
+    top: -5%;
+    left: -3%;
+    z-index: 10;
+}
+
+.border_bottom{
+    position: absolute;
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: #004924;
+    bottom: -5%;
+    right: -3%;
+    z-index: 10;
+}
+
+.test_card{
+    display: grid;
+    margin-left:10px ;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.test_card:hover{
+    box-shadow: 5px 5px 5px 5px #d7d7d7;
+    transition-duration: .50s;
+}
+
+.test_card img{
+    min-width: 100%;
+    max-width: 100%;
+}
+
+
+.test_card img:hover{
+    filter : brightness(40%);
+    transition-duration:.50s;
+}
+
+.descript{
+    text-align: center;
+    padding: 2%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+footer{
+    width: 100vw;
+    height: 30vh;
+    background-color: #004924;
+}
