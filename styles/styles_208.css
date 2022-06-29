@@ -70,7 +70,7 @@ body{
 .banniere{
     width: 100vw;
     height: 40vh;
-    background-image: url(/images/banniere_208.jpg);
+    background-image: url("../images/banniere_208.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -151,7 +151,7 @@ body{
 }
 .slider-nav a {
     display: inline-block;
-    background-image: url(/images/peugeot-208-a.png);
+    background-image: url("../images/peugeot-208-a.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 5vw;
