@@ -53,7 +53,7 @@ body{
 .pages a:hover{
     margin-top: -3px;
     border-bottom: 3px solid #004924;
-    transition-duration: all .5s ease-in;
+    transition: all .5s ease-in;
 }
 
 
@@ -194,6 +194,16 @@ body{
 .aside_information{
     margin-top: 15%;
     margin-left: 15%;
+}
+
+.aside_information h2{
+    color: grey;
+    opacity: 60%;
+    font-size: 30px;
+}
+
+.aside_information ul{
+    margin-top: 15%;
 }
 
 .aside_information li{

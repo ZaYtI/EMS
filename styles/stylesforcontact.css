@@ -1,0 +1,150 @@
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar{
+    height:80px;
+    background-color:white;
+    display:grid;
+    grid-template-columns:50% 50%;
+    background-color: white;
+}
+
+
+.reseaux{
+    display:flex;
+    justify-content:end;
+}
+
+.reseaux i{
+    font-size: 40px;
+    color: #004924;
+    cursor: pointer ;
+    margin: 15px 15px 0 0;
+}
+
+.reseaux i:hover{
+    color: #151515;
+    transition-duration: 0.5s;
+}
+.logo{
+    display: flex;
+}
+
+.pages{
+    display: flex;
+    margin:auto auto auto 3%;
+}
+
+.pages a{
+    font-size: 25px;
+    margin:0 15px 0 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pages a:hover{
+    margin-top: -3px;
+    border-bottom: 3px solid #004924;
+    transition: all .5s ease-in;
+}
+
+
+.logo img{
+    margin: 0px;
+    width: 300px;
+    height: 80px;
+}
+
+.logo img:hover{
+    cursor: pointer;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f9;
+}
+
+.banniere{
+    width: 100%;
+    height: 40vh;
+    background-image: url("../images/banniere_208.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+form{
+    background-color: white;
+    width: 80%;
+    height: 100vh;
+    margin: 50px auto auto auto;
+}
+
+.start_form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+label{
+    display: block;
+}
+
+.Nom{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.Telephone{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.Date_Arriver{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.Date_Depart{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.email{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.sujet{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+input{
+    border: none;
+    background-color: #f1f1f9;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    border-radius:5px ;
+    box-sizing: border-box;
+}
+
+input:focus{
+    border: none;
+    box-shadow: 2px 2px 2px 2px #f1f1f9;
+}
+
+.description{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.description textarea{
+    width: 100%;
+    border: none;
+    background-color: #f1f1f9;
+    height: 400px;
+}
