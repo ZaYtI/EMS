@@ -2,8 +2,6 @@
     margin:0;
     padding:0;
     list-style:none;
-    font-family: 'Bebas Neue', cursive;
-
     font-family: 'Oswald', sans-serif;
 }
 
@@ -11,9 +9,15 @@
     width:100%;
     display:grid;
     grid-template-columns:50% 50%;
-    width:100vw;
     height:calc(100vh - 80px);
     position: relative;
+}
+
+@media screen and (max-width: 1180px){
+    #all{
+        grid-template-columns: 100%;
+        grid-auto-rows: 50% 50%;
+    }
 }
 
 
@@ -141,7 +145,7 @@
 }
 
 .logo img{
-    margin: 0px;
+    margin: 0;
     width: 300px;
     height: 80px;
 }

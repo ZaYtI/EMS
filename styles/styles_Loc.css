@@ -7,6 +7,7 @@
 }
 body{
     background-color: #f1f1f9;
+    width: 100%;
 }
 
 .navbar{
@@ -75,7 +76,8 @@ body{
 }
 
 .inter{
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -100,7 +102,7 @@ body{
 .Location_Voiture{
     display: grid;
     margin: auto;
-    width: 80vw;
+    width: 80%;
     height: 100%;
     background-color: white;
     grid-template-columns: 33% 33% 33%;
@@ -162,6 +164,20 @@ body{
     padding: 2%;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+@media screen and (max-width: 1000px){
+    .Location_Voiture{
+        width: 95%;
+        grid-template-columns: 100%;
+        grid-template-rows:50% 50%;
+    }
+    .border_bottom{
+        display: none;
+    }
+    .border_haut{
+        display: none;
+    }
 }
 
 
