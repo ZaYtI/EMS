@@ -161,7 +161,7 @@ body{
 
 .descript{
     text-align: center;
-    padding: 2%;
+    padding: 20px;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -170,7 +170,6 @@ body{
     .Location_Voiture{
         width: 95%;
         grid-template-columns: 100%;
-        grid-template-rows:50% 50%;
     }
     .border_bottom{
         display: none;
