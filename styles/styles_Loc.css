@@ -170,6 +170,7 @@ body{
     .Location_Voiture{
         width: 95%;
         grid-template-columns: 100%;
+        grid-template-rows:none;
     }
     .border_bottom{
         display: none;
