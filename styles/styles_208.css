@@ -231,7 +231,9 @@ body{
     box-shadow: 5px 5px 5px 5px #d7d7d7;
     transition: all .5s;
 }
-
+.sous_menu{
+    display: none;
+}
 @media screen and (max-width: 1300px) {
     .container{
         width: 90vw;
@@ -252,6 +254,18 @@ body{
     .aside_information{
         margin-top: 10px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .pages{
+        display: none;
+    }
+    .menu_plein{
+        display:none;
+    }
+    .sous_menu{
+        display: block;
     }
 }
 
@@ -281,6 +295,12 @@ body{
     }
     .slider-nav{
         text-align: center;
+    }
+    .border_haut{
+        display: none;
+    }
+    .border_bottom{
+        display: none;
     }
 }
 

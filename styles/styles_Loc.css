@@ -138,9 +138,7 @@ body{
 
 .test_card{
     display: grid;
-    margin-left:10px ;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin: 5px 5px 5px 5px;
 }
 
 .test_card:hover{
@@ -177,6 +175,20 @@ body{
     }
     .border_haut{
         display: none;
+    }
+}
+.sous_menu{
+    display: none;
+}
+@media screen and (max-width: 800px) {
+    .pages{
+        display: none;
+    }
+    .menu_plein{
+        display: none;
+    }
+    .sous_menu{
+        display: block;
     }
 }
 

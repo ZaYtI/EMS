@@ -30,6 +30,8 @@ body{
     margin: 15px 15px 0 0;
 }
 
+
+
 .reseaux i:hover{
     color: #151515;
     transition-duration: 0.5s;
@@ -105,13 +107,29 @@ form{
     grid-template-columns: 50% 50%;
 }
 
+.sous_menu{
+    display: none;
+}
 @media screen and (max-width: 800px){
     .start_form{
         display: block;
         width: 100%;
     }
-}
 
+    .pages{
+        display: none;
+    }
+
+    form{
+        width: 95%;
+    }
+    .menu_plein{
+        display: none;
+    }
+    .sous_menu{
+        display: block;
+    }
+}
 label{
     display: block;
 }
