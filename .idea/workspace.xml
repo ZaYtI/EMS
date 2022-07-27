@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66b414bb-fdb7-4d97-885c-2e8a93b93c19" name="Changes" comment="test js">
+    <list default="true" id="66b414bb-fdb7-4d97-885c-2e8a93b93c19" name="Changes" comment="test git">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/text.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/text.js" afterDir="false" />
     </list>
@@ -77,7 +77,7 @@
       <workItem from="1658351774810" duration="4554000" />
       <workItem from="1658847711600" duration="11063000" />
       <workItem from="1658927286803" duration="2350000" />
-      <workItem from="1658951469684" duration="6035000" />
+      <workItem from="1658951469684" duration="7213000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1656542426398</created>
@@ -212,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658957652184</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="test git">
+      <created>1658957878406</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1658957878406</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,6 +265,7 @@
     <MESSAGE value="footer final" />
     <MESSAGE value="footer final responsive" />
     <MESSAGE value="test js" />
-    <option name="LAST_COMMIT_MESSAGE" value="test js" />
+    <MESSAGE value="test git" />
+    <option name="LAST_COMMIT_MESSAGE" value="test git" />
   </component>
 </project>

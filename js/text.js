@@ -32,6 +32,7 @@ function ControleDate(){
     else{
         window.alert("Votre date de retour doit etre inferieur a la date d'arriver")
         document.getElementById("DateA").value="";
+
     }
 
 }
