@@ -1,3 +1,23 @@
+var form = document.querySelector("form")
+date1 = document.getElementById("Date").value;
+date2 = document.getElementById("DateA").value;
+form.onsubmit = function(e) {
+    if (dateDiff(date1,date2)===false && !((date1==="")||(date2===""))){
+        window.alert("Votre date de départ doit etre inferieur a la date de retour")
+        document.getElementById("DateA").value="";
+        e.preventDefault();
+    }
+    if (date1 === ""){
+        window.alert("Vous n'avez pas renseigner votre date de départ ")
+        e.preventDefault();
+    }
+
+    if (date2 ===""){
+        window.alert("Vous n'avez pas renseigner votre date de retour ")
+        e.preventDefault();
+    }
+}
+
 function OnClickDivEntreprise() {
     window.location.href="gestion_flotte.html";
 
@@ -22,17 +42,11 @@ function dateDiff(date1, date2){
     return date1<date2;
 }
 
-function ControleDate(){
-    var form = document.querySelector('form')
-    date1 = document.getElementById("Date").value;
-    date2 = document.getElementById("DateA").value;
-    if (dateDiff(date1,date2)){
-        window.alert("c'est bon")
+function onlyNumber()
+{
+    var champ=document.getElementById('Tel');
+    while (champ.value.match(/[^0-9]/))
+    {
+        champ.value = champ.value.replace(/[^0-9]/,'');
     }
-    else{
-        window.alert("Votre date de retour doit etre inferieur a la date d'arriver")
-        document.getElementById("DateA").value="";
-
-    }
-
 }
