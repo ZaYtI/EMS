@@ -18,3 +18,21 @@ function OnClickTwitter(){
 function OnClickInstagram(){
     window.location.href=""
 }
+
+function dateDiff(date1, date2){
+    return date1<date2;
+}
+
+function ControleDate(){
+    var form = document.querySelector('form')
+    date1 = document.getElementById("Date").value;
+    date2 = document.getElementById("DateA").value;
+    if (dateDiff(date1,date2)){
+        window.alert("c'est bon")
+    }
+    else{
+        window.alert("Votre date de retour doit etre inferieur a la date d'arriver")
+        document.getElementById("DateA").value="";
+    }
+
+}
