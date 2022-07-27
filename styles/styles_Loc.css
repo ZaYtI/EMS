@@ -53,7 +53,6 @@ body{
 .pages a:hover{
     margin-top: -3px;
     border-bottom: 3px solid #004924;
-    transition: all .5s ease-in;
 }
 
 
@@ -177,18 +176,12 @@ body{
         display: none;
     }
 }
-.sous_menu{
-    display: none;
-}
 @media screen and (max-width: 800px) {
     .pages{
         display: none;
     }
     .menu_plein{
         display: none;
-    }
-    .sous_menu{
-        display: block;
     }
 }
 
@@ -248,5 +241,37 @@ footer a:hover{
 @media screen and (max-width:990px){
     footer{
         display: block;
+    }
+}
+
+nav{
+    display: none;
+}
+
+@media screen and (max-width:990px){
+    footer{
+        display: block;
+    }
+    nav{
+        display: flex;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: #004924;
+        z-index: 100;
+    }
+
+    nav ul li a{
+        color: white;
+    }
+    .menu_plein{
+        display: none;
     }
 }
