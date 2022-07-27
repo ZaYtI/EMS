@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="66b414bb-fdb7-4d97-885c-2e8a93b93c19" name="Changes" comment="footer final responsive" />
+    <list default="true" id="66b414bb-fdb7-4d97-885c-2e8a93b93c19" name="Changes" comment="test js">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/text.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/text.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,7 +77,7 @@
       <workItem from="1658351774810" duration="4554000" />
       <workItem from="1658847711600" duration="11063000" />
       <workItem from="1658927286803" duration="2350000" />
-      <workItem from="1658951469684" duration="5836000" />
+      <workItem from="1658951469684" duration="6035000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1656542426398</created>
@@ -202,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658957323360</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="test js">
+      <created>1658957652184</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1658957652184</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,7 +223,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -235,6 +257,7 @@
     <MESSAGE value="responsive test telephone" />
     <MESSAGE value="footer final" />
     <MESSAGE value="footer final responsive" />
-    <option name="LAST_COMMIT_MESSAGE" value="footer final responsive" />
+    <MESSAGE value="test js" />
+    <option name="LAST_COMMIT_MESSAGE" value="test js" />
   </component>
 </project>
