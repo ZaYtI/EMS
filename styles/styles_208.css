@@ -216,6 +216,7 @@ body{
 }
 
 .button{
+    z-index: 10;
     margin-top: 50px;
 }
 
@@ -352,4 +353,15 @@ footer a:hover{
     text-align: center;
     margin-top: 3px;
     margin-bottom: 3px;
+}
+
+.localisation img{
+    max-width: 80%;
+    max-height: 280px;
+}
+
+@media screen and (max-width:990px){
+    footer{
+        display: block;
+    }
 }
