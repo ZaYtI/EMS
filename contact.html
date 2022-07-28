@@ -41,7 +41,7 @@
         <a href="208.html"><i class="fa-solid fa-circle-arrow-left"></i></a>
         <h1>NOUS CONTACTER</h1>
     </div>
-        <form method="post" action="mail.php">
+        <form method="post" action="mail.php" onsubmit=" return verif()">
             <div class="start_form">
                 <div class="Nom">
                     <label for="Nom">Nom :</label>
@@ -53,11 +53,11 @@
                 </div>
                 <div class="Date_Depart">
                     <label for="Date"> Choisir la date de départ :</label>
-                    <input type="date" name="Date" id="Date" value="Date" required>
+                    <input type="date" name="Date" id="Date" value="Date">
                 </div>
                 <div class="Date_Arriver">
                     <label for="DateA" > Choisir la date de retour :</label>
-                    <input type="date" name="DateA" id="DateA" required>
+                    <input type="date" name="DateA" id="DateA">
                 </div>
                 <div class="email">
                     <label for="email">Adresse e-mail(courriel) :</label>
@@ -73,7 +73,7 @@
                     <textarea id="descript" placeholder="Entrer vos information complémentaire"></textarea>
                 </div>
             <div class="bouton">
-                <button id="valid"  onclick="ControleDate()" type="submit">VALIDER</button>
+                <button id="valid" type="submit">VALIDER</button>
                 <button type="reset">ANNULER</button>
             </div>
         </form>
