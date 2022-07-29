@@ -109,12 +109,13 @@ body{
     box-shadow: 15px 15px  15px 15px #d7d7d7 ;
     align-items: center;
     overflow: hidden;
+    max-width: 1600px;
 }
 
 .card:nth-child(1){
     margin: 20px;
     height: 800px;
-    background:linear-gradient(#000000,grey);
+    background:linear-gradient(45deg,#000000,grey);
     color: white;
     border-radius: 50px;
 }
@@ -122,7 +123,7 @@ body{
 .card:nth-child(2){
     margin: 20px;
     height: 800px;
-    background:linear-gradient(orange,grey);
+    background:linear-gradient(45deg,orange,grey);
     color: white;
     border-radius: 50px;
 }
@@ -130,7 +131,7 @@ body{
 .card:nth-child(3){
     margin: 20px;
     height: 800px;
-    background:linear-gradient(red,grey);
+    background:linear-gradient(45deg,red,grey);
     color: white;
     border-radius: 50px;
 }
@@ -172,9 +173,8 @@ body{
 
 .card:hover{
     transform: perspective(200px)translate3d(0, 10px, 10px);
-    transition: transform .50s;
     box-shadow: #d7d7d7 5px 5px 5px 5px;
-    background-color: pink;
+    transition: .50s;
 }
 
 .card_list{
@@ -211,6 +211,7 @@ body{
 hr{
     background-color: green;
     height: 5px;
+    border: none;
     border-radius: 5px 5px 5px 5px;
     margin-left: 25%;
     margin-right: 25%;
