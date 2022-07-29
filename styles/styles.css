@@ -136,7 +136,7 @@
 
 
 #premiere:hover::before{
-    border-width: 0px 400px 400px 0px;
+    border-width: 0 400px 400px 0;
     transition: border .50s;
 }
 

@@ -69,7 +69,7 @@ body{
 .banniere{
     width: 100vw;
     height: 50vh;
-    background-image: url("../images/bmw.jpg");
+    background-image: url("../images/logo_fond_vert.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -91,94 +91,132 @@ body{
 }
 
 .container{
-    margin-top:0px;
     width: 100%;
+    margin-top: 0;
     min-height: 100vh;
-    margin-bottom: 150px ;
+    margin-bottom: 150px;
 }
 
-
-.Location_Voiture{
+.prestation{
     display: grid;
     margin: auto;
     width: 80%;
+    min-height: 900px;
     height: 100%;
     background-color: white;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50% 50%;
     position: relative;
     box-shadow: 15px 15px  15px 15px #d7d7d7 ;
     align-items: center;
+    overflow: hidden;
 }
 
-.border_haut{ 
-    position: absolute;
-    font-size: 30px;
-    width: 100px;
-    height: 100px;
+.card:nth-child(1){
+    margin: 20px;
+    height: 800px;
+    background:linear-gradient(#000000,grey);
     color: white;
-    background-color: #004924;
-    top: -5%;
-    left: -3%;
-    z-index: -1;
+    border-radius: 50px;
 }
 
-.border_bottom{
-    position: absolute;
-    font-size: 30px;
-    width: 100px;
-    height: 100px;
+.card:nth-child(2){
+    margin: 20px;
+    height: 800px;
+    background:linear-gradient(orange,grey);
     color: white;
-    background-color: #004924;
-    bottom: -5%;
-    right: -3%;
-    z-index: 10;
+    border-radius: 50px;
 }
 
-.test_card{
-    display: grid;
-    margin: 5px 5px 5px 5px;
+.card:nth-child(3){
+    margin: 20px;
+    height: 800px;
+    background:linear-gradient(red,grey);
+    color: white;
+    border-radius: 50px;
 }
 
-.test_card:hover{
-    box-shadow: 5px 5px 5px 5px #d7d7d7;
-    transition-duration: .50s;
-}
-
-.test_card img{
-    min-width: 100%;
-    max-width: 100%;
-}
-
-
-.test_card img:hover{
-    filter : brightness(40%);
-    transition-duration:.50s;
-}
-a:hover .test_card img {
-    filter : brightness(40%);
-    transition-duration:.50s;
-}
-.descript{
+.card_icons{
     text-align: center;
-    padding: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
+    font-size: 100px;
 }
 
-@media screen and (max-width: 1000px){
-    .Location_Voiture{
-        width: 95%;
-        grid-template-columns: 100%;
-        grid-template-rows:none;
-    }
-    .border_bottom{
-        display: none;
-    }
-    .border_haut{
-        display: none;
-    }
+.card_icons i{
+    color: white;
 }
+
+.card_title{
+    text-align: center;
+}
+
+.card_title h2{
+    color: white;
+    padding: 40px;
+}
+
+.card_descript_text{
+    text-align: center;
+    width: 90%;
+    margin-top: 20px;
+    margin-left:5% ;
+    word-wrap: break-word;
+}
+
+.card_descript_text p{
+    color: white;
+}
+
+.card:hover hr{
+    margin: 0;
+    transition: margin .5s;
+}
+
+.card:hover{
+    transform: perspective(200px)translate3d(0, 10px, 10px);
+    transition: transform .50s;
+    box-shadow: #d7d7d7 5px 5px 5px 5px;
+    background-color: pink;
+}
+
+.card_list{
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+.card_list i{
+    padding: 5px;
+    color: white;
+}
+
+.card_list li{
+    color: white;
+    padding: 10px;
+}
+
+.card hr{
+    background-color: white;
+    margin: 0 50px 0 50px;
+    height: 2px;
+}
+
+.button{
+    text-align: center;
+}
+
+.button a{
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+hr{
+    background-color: green;
+    height: 5px;
+    border-radius: 5px 5px 5px 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 75px
+}
+
 @media screen and (max-width: 800px) {
     .pages{
         display: none;
