@@ -84,7 +84,8 @@
       <workItem from="1658951469684" duration="11812000" />
       <workItem from="1659033294998" duration="10182000" />
       <workItem from="1659049186268" duration="215000" />
-      <workItem from="1659084729451" duration="8030000" />
+      <workItem from="1659084729451" duration="9484000" />
+      <workItem from="1659345432854" duration="2655000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1656542426398</created>
@@ -261,7 +262,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659097326101</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="ajout de la pgae gestion_flotte">
+      <created>1659098674838</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1659098674838</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

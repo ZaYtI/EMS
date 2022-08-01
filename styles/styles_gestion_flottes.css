@@ -112,28 +112,26 @@ body{
     max-width: 1600px;
 }
 
-.card:nth-child(1){
+.card{
+    min-height: 800px;
     margin: 20px;
-    height: 800px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.card:nth-child(1){
     background:linear-gradient(45deg,#000000,grey);
     color: white;
-    border-radius: 50px;
 }
 
 .card:nth-child(2){
-    margin: 20px;
-    height: 800px;
     background:linear-gradient(45deg,orange,grey);
     color: white;
-    border-radius: 50px;
 }
 
 .card:nth-child(3){
-    margin: 20px;
-    height: 800px;
     background:linear-gradient(45deg,red,grey);
     color: white;
-    border-radius: 50px;
 }
 
 .card_icons{
@@ -290,6 +288,19 @@ nav{
     display: none;
 }
 
+@media screen and (max-width: 1145px ){
+    .prestation{
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 830px){
+    .prestation{
+        width: 80%;
+        display: block;
+    }
+}
+
 @media screen and (max-width:990px){
     footer{
         display: block;
@@ -314,6 +325,9 @@ nav{
         color: white;
     }
     .menu_plein{
+        display: none;
+    }
+    .pages{
         display: none;
     }
 }
