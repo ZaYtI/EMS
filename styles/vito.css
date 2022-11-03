@@ -1,15 +1,19 @@
 * {
     margin:0;
     padding:0;
-    list-style:none;
     text-decoration: none;
     color: black;
-}
-body{
-    background-color: #f1f1f9;
-    width: 100%;
+    list-style-type: none;
+
 }
 
+html{
+    width: 100%;
+}
+body{
+    width: 100%;
+    background-color: #f1f1f9;
+}
 .navbar{
     height:80px;
     background-color:white;
@@ -68,16 +72,15 @@ body{
 
 .banniere{
     width: 100vw;
-    height: 50vh;
-    background-image: url("../images/bmw.jpg");
+    height: 40vh;
+    background-image: url("../images/banniere_208.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .inter{
+    width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -86,31 +89,20 @@ body{
     font-size: 30px;
     margin-top: auto;
     margin-bottom: auto;
-    margin-right: 5px;
+    margin-right: 15px;
     color: black;
 }
 
 .container{
-    margin-top:0px;
-    width: 100%;
-    min-height: 100vh;
-    margin-bottom: 150px ;
-}
-
-
-.Location_Voiture{
-    display: grid;
-    margin: auto;
-    width: 80%;
-    height: 100%;
-    background-color: white;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 50% 50%;
     position: relative;
+    display: flex;
+    margin: auto;
+    max-width: 1300px;
+    background-color: white;
+    margin-bottom: 150px;
     box-shadow: 15px 15px  15px 15px #d7d7d7 ;
-    align-items: center;
-}
-
+    height: 100%;
+} 
 .border_haut{ 
     position: absolute;
     font-size: 30px;
@@ -132,61 +124,201 @@ body{
     background-color: #004924;
     bottom: -5%;
     right: -3%;
-    z-index: 10;
+    z-index: 0;
+}
+/*slider*/
+.slider {
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
-.test_card{
+.slider-viewport {
+    margin-top: 15px ;
+    width: 650px;
+    height: auto;
+    overflow: hidden;
+}
+
+.slider-content {
     display: grid;
-    margin: 5px 5px 5px 5px;
+    grid-auto-flow: column;
+    transition: 1s all;
+}
+.slider-content img {
+    width: 650px;
+    height: auto;
 }
 
-.test_card:hover{
-    box-shadow: 5px 5px 5px 5px #d7d7d7;
-    transition-duration: .50s;
+.slider-nav {
+    width: 100%;
+}
+.slider-nav a {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin:  3px;
 }
 
-.test_card img{
-    min-width: 100%;
-    max-width: 100%;
+.slider-nav a:nth-child(1){
+    background-image: url("../images/vito/vito2.jpg");
+}
+.slider-nav a:nth-child(2){
+    background-image: url("../images/vito/vito3.jpg");
+}
+.slider-nav a:nth-child(3){
+    background-image: url("../images/vito/vito.jpg");
 }
 
 
-.test_card img:hover{
-    filter : brightness(40%);
-    transition-duration:.50s;
+.slider-nav a:hover {
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
 }
-a:hover .test_card img {
-    filter : brightness(40%);
-    transition-duration:.50s;
+
+#img2:target .slider-content {
+    transform: translateX(-650px);
 }
-.descript{
+#img3:target .slider-content {
+    transform: translateX(-1300px);
+}
+
+#img4:target .slider-content {
+    transform: translateX(-1950px);
+}
+
+#img5:target .slider-content {
+    transform: translateX(-2600px);
+}
+
+
+/*information a droite du slider en grand ecran*/
+.aside_info{
+    width: 100%;
+    margin-top: 15px;
+}
+
+.aside_info .title_aside{
+    width: 100%;
     text-align: center;
+}
+.aside_information{
+    padding: 0;
+    margin: 30px 0 0 0;
+}
+
+.aside_information h2{
+    color: grey;
+    opacity: 60%;
+    font-size: 30px;
+}
+
+.aside_information ul{
+    margin-top: 50px;
+}
+
+.aside_information li{
     padding: 20px;
-    margin-top: auto;
-    margin-bottom: auto;
+}
+
+.button{
+    z-index: 10;
+    margin-top: 50px;
+}
+
+.button a{
+    color: white;
+    background-color: #004924;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.button a:hover{
+    box-shadow: 5px 5px 5px 5px #d7d7d7;
+    transition: all .5s;
+}
+.sous_menu{
+    display: none;
+}
+@media screen and (max-width: 1300px) {
+    .container{
+        width: 90vw;
+    }
 }
 
 @media screen and (max-width: 1000px){
-    .Location_Voiture{
-        width: 95%;
-        grid-template-columns: 100%;
-        grid-template-rows:none;
-    }
-    .border_bottom{
-        display: none;
-    }
-    .border_haut{
-        display: none;
+    .container{
+        width: 90%;
     }
 }
+
+@media screen and (max-width: 1068px){
+    .container{
+        display: block;
+    }
+
+    .slider{
+        margin-top: 15px;
+    }
+    .aside_information{
+        margin-top: 10px;
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 800px) {
     .pages{
         display: none;
     }
     .menu_plein{
+        display:none;
+    }
+    .sous_menu{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 760px){
+    .aside_information h2{
+        color: grey;
+        opacity: 60%;
+        font-size: 30px;
+    }
+
+
+
+    .aside_information ul{
+        margin-top: 5%;
+    }
+
+    .aside_information li{
+        padding: 10px;
+    }
+
+    .slider-viewport {
+        margin-top: 15px ;
+        width: 100%;
+        height: 450px;
+    }
+
+    .slider{
+        margin: 0;
+    }
+    .slider-nav{
+        text-align: center;
+    }
+    .border_haut{
+        display: none;
+    }
+    .border_bottom{
         display: none;
     }
 }
+
 
 footer{
     margin-top: 100px;
@@ -246,6 +378,7 @@ footer a:hover{
         display: block;
     }
 }
+
 
 nav{
     display: none;

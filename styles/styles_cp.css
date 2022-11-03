@@ -162,21 +162,23 @@ body{
 }
 
 .slider-nav a:nth-child(1){
-    background-image: url("../images/peugeot/peugeot_ems.jpg");
+    background-image: url("../images/camping/cp.jpg");
 }
 .slider-nav a:nth-child(2){
-    background-image: url("../images/peugeot/p.jpg");
+    background-image: url("../images/camping/cp1.jpg");
 }
 .slider-nav a:nth-child(3){
-    background-image: url("../images/peugeot/p2.jpg");
+    background-image: url("../images/camping/cp2.jpg");
 }
 .slider-nav a:nth-child(4){
-    background-image: url("../images/peugeot/p3.jpg");
+    background-image: url("../images/camping/cp3.jpg");
 }
 .slider-nav a:nth-child(5){
-    background-image: url("../images/peugeot/p4.jpg");
+    background-image: url("../images/camping/cp4.jpg");
 }
-
+.slider-nav a:nth-child(6){
+    background-image: url("../images/peugeot/p5.jpg");
+}
 
 .slider-nav a:hover {
     background-color: #fff;
