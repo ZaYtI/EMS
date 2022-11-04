@@ -67,7 +67,6 @@ body{
 }
 
 .banniere{
-    width: 100vw;
     height: 50vh;
     background-image: url("../images/logo_fond_vert.png");
     background-repeat: no-repeat;

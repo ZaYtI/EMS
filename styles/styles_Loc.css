@@ -67,7 +67,6 @@ body{
 }
 
 .banniere{
-    width: 100vw;
     height: 50vh;
     background-image: url("../images/bmw.jpg");
     background-repeat: no-repeat;
@@ -283,7 +282,7 @@ hr{
 }
 .condition{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 520;
+    font-weight: 500;
     width: 80%;
     height: auto;
     margin: auto;
@@ -318,7 +317,7 @@ hr{
 }
 
 .left ul li{
-    padding: 4px 4px;
+    padding: 3px 3px;
 }
 
 .border{

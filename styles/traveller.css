@@ -71,7 +71,6 @@ body{
 }
 
 .banniere{
-    width: 100vw;
     height: 40vh;
     background-image: url("../images/banniere_208.jpg");
     background-repeat: no-repeat;

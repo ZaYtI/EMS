@@ -134,17 +134,19 @@ body{
 .slider-viewport {
     margin-top: 15px ;
     width: 650px;
+    max-width: 100%;
     height: auto;
     overflow: hidden;
 }
 
 .slider-content {
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
     transition: 1s all;
+    width: 100%;
 }
 .slider-content img {
-    width: 650px;
+    flex-shrink: 0;
+    width: 100%;
     height: auto;
 }
 
@@ -161,31 +163,26 @@ body{
 }
 
 .slider-nav a:nth-child(1){
-    background-image: url("../images/trafic/trafic.jpg");
+    background-image: url("../images/peugeot/peugeot_ems.jpg");
 }
-
+.slider-nav a:nth-child(2){
+    background-image: url("../images/peugeot/p.jpg");
+}
+.slider-nav a:nth-child(3){
+    background-image: url("../images/peugeot/p2.jpg");
+}
+.slider-nav a:nth-child(4){
+    background-image: url("../images/peugeot/p3.jpg");
+}
+.slider-nav a:nth-child(5){
+    background-image: url("../images/peugeot/p4.jpg");
+}
 
 
 .slider-nav a:hover {
     background-color: #fff;
     box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 0.8);
 }
-
-#img2:target .slider-content {
-    transform: translateX(-650px);
-}
-#img3:target .slider-content {
-    transform: translateX(-1300px);
-}
-
-#img4:target .slider-content {
-    transform: translateX(-1950px);
-}
-
-#img5:target .slider-content {
-    transform: translateX(-2600px);
-}
-
 
 /*information a droite du slider en grand ecran*/
 .aside_info{
@@ -257,6 +254,9 @@ body{
     .slider{
         margin-top: 15px;
     }
+    .slider-viewport {
+        width: 100%;
+    }
     .aside_information{
         margin-top: 10px;
         text-align: center;
@@ -296,7 +296,6 @@ body{
     .slider-viewport {
         margin-top: 15px ;
         width: 100%;
-        height: 450px;
     }
 
     .slider{
