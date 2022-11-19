@@ -1,0 +1,135 @@
+* {
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-decoration: none;
+    color: black; 
+}
+body{
+    background-color: #f1f1f9;
+    width: 100%;
+}
+
+.navbar{
+    height:80px;
+    background-color:white;
+    display:grid;
+    grid-template-columns:50% 50%;
+}
+
+
+.reseaux{
+    display:flex;
+    justify-content:end;
+}
+
+.reseaux i{
+    font-size: 40px;
+    color: #004924;
+    cursor: pointer ;
+    margin: 15px 15px 0 0;
+}
+
+.reseaux i:hover{
+    color: #151515;
+    transition-duration: 0.5s;
+}
+.logo{
+    display: flex;
+}
+
+.pages{
+    display: flex;
+    margin:auto auto auto 3%;
+}
+
+.pages a{
+    font-size: 25px;
+    margin:0 15px 0 0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pages a:hover{
+    margin-top: -3px;
+    border-bottom: 3px solid #004924;
+}
+
+
+.logo img{
+    margin: 0px;
+    width: 300px;
+    height: 80px;
+}
+
+.logo img:hover{
+    cursor: pointer;
+}
+
+.banniere{
+    height: 50vh;
+    background-image: url("../images/bmw.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inter{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inter a{
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 5px;
+    color: black;
+}
+
+
+@media screen and (max-width: 800px) {
+    .pages{
+        display: none;
+    }
+    .menu_plein{
+        display: none;
+    }
+}
+
+nav{
+    display: none;
+}
+
+@media screen and (max-width:990px){
+    footer{
+        display: block;
+    }
+    nav{
+        display: flex;
+    }
+    nav ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 50px;
+        background-color: #004924;
+        z-index: 100;
+    }
+
+    nav ul li a{
+        color: white;
+    }
+    .menu_plein{
+        display: none;
+    }
+    iframe{
+        margin-bottom: 50px;
+    }
+}
