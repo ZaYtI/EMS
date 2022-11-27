@@ -1,8 +1,14 @@
+
+@font-face {
+    font-family: 'Masque';
+    src: url('../fonts/MASQUE__.ttf') format('truetype');
+}
+
 * {
     margin:0;
     padding:0;
     list-style:none;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Masque';
 }
 
 #all{
@@ -22,7 +28,8 @@
     left: 50%;
     transform: translate(-50%,-50%);
     text-align:center;
-    font-size: 60px;
+    font-size: 40px;
+    color: black;
 }
 
 #deuxieme .menu_deuxieme{
@@ -31,7 +38,8 @@
     left: 50%;
     transform: translate(-50%,-50%);
     text-align:center;
-    font-size: 60px;
+    font-size: 40px;
+    color: black;
 }
 #premiere .menu_premiere p{
     display: none;
@@ -84,15 +92,15 @@
 
 
 #premiere{
-    background-image: url("../images/bm.jpg");
-    background-repeat : no-repeat;
+    background-image: url("../images/images_location/314730067_426726976324806_4632017223905430087_n.jpg");
     background-size: cover;
+    background-repeat : no-repeat;
     position: relative;
     color: white;
 }
 
 #premiere:hover{
-    background-image: linear-gradient(rgba(169,169,169,0.3),rgba(169,169,169,0.3)),url("../images/bm.jpg");
+    background-image: linear-gradient(rgba(169,169,169,0.3),rgba(169,169,169,0.3)),url("../images/images_location/314730067_426726976324806_4632017223905430087_n.jpg");
 }
 
 #deuxieme:hover {
@@ -112,6 +120,7 @@
     position: absolute;
     bottom: 0;
     right: 0;
+    transition: border .50s ease-in-out;
 }
 
 #premiere::before,
@@ -120,47 +129,44 @@
     position: absolute;
     bottom: 0;
     left: 0;
+    transition: border .50s ease-in-out;
 }
 
 #deuxieme::before{
     border-style: solid;
     border-color: transparent transparent #E7E7E7 transparent;
-    transition: border .25s;
 }
 
 #premiere::before{
     border-style: solid;
     border-color: transparent transparent #E7E7E7 transparent;
-    transition: border .25s;
 }
 
 
 #premiere:hover::before{
-    border-width: 0 400px 400px 0;
-    transition: border .50s;
+    border-width: 0 300px 300px 0;
 }
 
 
 #deuxieme:hover::before{
-    border-width: 0 0 400px 400px;
-    transition: border .50s;
+    border-width: 0 0 300px 300px;
 }
 
 #premiere::after{
     content: 'Decouvrir';
-    bottom: 100px;
-    left: 100px;
+    bottom: 50px;
+    left: 50px;
     color: #151515;
-    font-size: 30px;
+    font-size: 25px;
     opacity: 0;
 }
 
 #deuxieme::after{
     content: 'Decouvrir';
-    bottom: 100px;
-    right: 100px;
+    bottom: 50px;
+    right: 50px;
     color: #151515;
-    font-size: 30px;
+    font-size: 25px;
     opacity: 0;
 }
 
@@ -216,7 +222,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
-    background-color: white;
+    background-color: transparent;
     border-radius: 50%;
     width: 300px;
     height: 100px;
@@ -224,6 +230,5 @@
 }
 
 .middle_Logo img{
-    width: 250px;
-    margin:15px 0 0 0;
+    width: 350px;
 }

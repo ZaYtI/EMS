@@ -38,11 +38,14 @@
 .test_card{
     display: grid;
     margin: 5px 5px 5px 5px;
+    border-radius: 2px 2px 2px 2px;
+    transition-duration: all .50s ease-in-out;
 }
 
 .test_card:hover{
     box-shadow: 5px 5px 5px 5px #d7d7d7;
-    transition-duration: .50s;
+    transition: all .50s ease-in-out;
+    scale: 1.05;
 }
 
 .test_card img{
@@ -50,14 +53,13 @@
     max-width: 100%;
 }
 
-
 .test_card img:hover{
     filter : brightness(40%);
-    transition-duration:.50s;
+    transition: all .50s ease-in-out;
 }
 a:hover .test_card img {
     filter : brightness(40%);
-    transition-duration:.50s;
+    transition: all .50s ease-in-out;
 }
 .descript{
     text-align: center;
@@ -65,9 +67,6 @@ a:hover .test_card img {
     margin-top: auto;
     margin-bottom: auto;
 }
-
-
-
 
 hr{
     width:50%;
