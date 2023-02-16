@@ -92,26 +92,31 @@
 
 
 #premiere{
-    background-image: url("../images/images_location/314730067_426726976324806_4632017223905430087_n.jpg");
+    background-image: linear-gradient(rgba(37, 35, 35, 0.3),rgba(9, 9, 9, 0.3)),url("../images/images_location/314730067_426726976324806_4632017223905430087_n.jpg");
     background-size: cover;
     background-repeat : no-repeat;
     position: relative;
     color: white;
+    transition: all .50s ease-in-out;
 }
 
 #premiere:hover{
-    background-image: linear-gradient(rgba(169,169,169,0.3),rgba(169,169,169,0.3)),url("../images/images_location/314730067_426726976324806_4632017223905430087_n.jpg");
+    background-image:url("../images/images_location/314730067_426726976324806_4632017223905430087_n.jpg");
+    transition: all .50s ease-in-out;
 }
 
 #deuxieme:hover {
-    background-image: linear-gradient(rgba(169,169,169,0.3),rgba(169,169,169,0.3)),url("../images/gestion_flotte.jpg");
+    background-image:url("../images/Abonnement.jpg");
+    transition: all .50s ease-in-out;
 }
 #deuxieme{
-    background-image: url("../images/gestion_flotte.jpg");
+    background-image: linear-gradient(rgba(37, 35, 35, 0.3),rgba(9, 9, 9, 0.3)),url("../images/Abonnement.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     position: relative;
     color:white;
+    transition: all .50s ease-in-out;
 }
 
 #deuxieme::before,
@@ -153,18 +158,19 @@
 }
 
 #premiere::after{
-    content: 'Decouvrir';
+    content: 'LOCATION';
     bottom: 50px;
-    left: 50px;
+    left: 30px;
     color: #151515;
     font-size: 25px;
     opacity: 0;
+    transition: all .90  ease-in-out;
 }
 
 #deuxieme::after{
-    content: 'Decouvrir';
+    content: 'S \'ABONNER';
     bottom: 50px;
-    right: 50px;
+    right: 30px;
     color: #151515;
     font-size: 25px;
     opacity: 0;

@@ -43,6 +43,7 @@
     max-width: 100%;
     height: auto;
     overflow: hidden;
+    scroll-behavior: smooth;
 }
 
 .slider-content {
@@ -120,9 +121,10 @@
     box-shadow: 5px 5px 5px 5px #d7d7d7;
     transition: all .5s;
 }
-.sous_menu{
+.sous_menu {
     display: none;
 }
+
 @media screen and (max-width: 1300px) {
     .container{
         width: 90vw;

@@ -7,7 +7,6 @@ $entete .= 'Reply-to: ' . $_POST['email'];
 $message_entreprise = '<html">
             <body style="width: 75%; margin: auto;">
             <a style="width: 100%; height: 80px;" href="https://zupimages.net/viewer.php?id=22/48/qyrk.png"><img src="https://zupimages.net/up/22/48/qyrk.png" alt="" /></a>
-       
             <h2 style="text-align: center;">Demande de location</h2>
             <hr style="height: 5px; background-color: #d7d7d7; width: 80%; margin: auto auto; border: none; border-radius: 5px 5px 5px 5px">
         <p><b>Sujet : </b>' . htmlspecialchars($_POST['sujet']) . '</p>
@@ -25,7 +24,6 @@ $message_entreprise = '<html">
 $message = '<html">
             <body style="width: 75%; margin: auto;">
             <a style="width: 100%; height: 80px;" href="https://zupimages.net/viewer.php?id=22/48/qyrk.png"><img src="https://zupimages.net/up/22/48/qyrk.png" alt="" /></a>
-       
             <h3 style="text-align: center;">Retour demande de location</h3>
             <hr style="height: 5px; background-color: #d7d7d7; width: 80%; margin: auto auto; border: none; border-radius: 5px 5px 5px 5px">
         <p><b>Sujet : </b>' . htmlspecialchars($_POST['sujet']) . '</p>

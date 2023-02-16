@@ -97,8 +97,9 @@ body{
 
 .banniere{
     height: 50vh;
-    background-image: url("../images/bmw.jpg");
+    background-image: url("../images/peugeot/p5.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
