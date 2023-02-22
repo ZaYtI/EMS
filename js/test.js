@@ -1,101 +1,77 @@
+/***********
+ Carousel
+ ************/
 
- $(function() {
-	/** -----------------------------------------
-	 * Modulo del Slider 
-	 -------------------------------------------*/
-	 var SliderModule = (function() {
-	 	var pb = {};
-	 	pb.el = $('#slider');
-	 	pb.items = {
-	 		panels: pb.el.find('.slider-wrapper > li'),
-	 	}
+const carouselContainer = document.querySelector('.carousel-container');
+const listImageArea = carouselContainer.querySelector('.next-list');
+const listOfImages = listImageArea.querySelectorAll('img');
+const currentImage = carouselContainer.querySelector('.current-image');
+const arrowLeft = carouselContainer.querySelector('.arrow-left');
+const arrowRight = carouselContainer.querySelector('.arrow-right');
 
-	 	// Interval del Slider
-	 	var SliderInterval,
-	 		currentSlider = 0,
-	 		nextSlider = 1,
-	 		lengthSlider = pb.items.panels.length;
+function styleList() {
+    if (listImageArea.scrollWidth == listImageArea.offsetWidth){
+        listImageArea.style.justifyContent = 'center'
+    } else {
+        listImageArea.style.justifyContent = 'flex-start'
+    }
 
-	 	// Constructor del Slider
-	 	pb.init = function(settings) {
-	 		this.settings = settings || {duration: 8000};
-	 		var items = this.items,
-	 			lengthPanels = items.panels.length,
-	 			output = '';
+};
 
-	 		// Insertamos nuestros botones
-	 		for(var i = 0; i < lengthPanels; i++) {
-	 			if(i == 0) {
-	 				output += '<li class="active"></li>';
-	 			} else {
-	 				output += '<li></li>';
-	 			}
-	 		}
+function goToRight() {
+    var current = listImageArea.querySelector('.current-image-list');
+    current.parentElement.nextElementSibling.children[0].classList.add('current-image-list');
+    current.classList.remove('current-image-list');
+    current = listImageArea.querySelector('.current-image-list');
+    listImageArea.scrollLeft = current.offsetLeft;
+    currentImage.attributes.src.value = current.attributes.src.value;
+    currentImage.classList.add('slideInFromRight');
+    setTimeout(function () {
+        currentImage.classList.remove('slideInFromRight');
+    }, 500);
+};
 
-	 		$('#control-buttons').html(output);
+function goToLeft() {
+    var current = listImageArea.querySelector('.current-image-list');
+    current.parentElement.previousElementSibling.children[0].classList.add('current-image-list');
+    current.classList.remove('current-image-list');
+    current = listImageArea.querySelector('.current-image-list');
+    listImageArea.scrollLeft = current.offsetLeft;
+    currentImage.attributes.src.value = current.attributes.src.value;
+    currentImage.classList.add('slideInFromLeft');
+    setTimeout(function () {
+        currentImage.classList.remove('slideInFromLeft');
+    }, 500);
+};
 
-	 		// Activamos nuestro Slider
-	 		activateSlider();
-	 		// Eventos para los controles
-	 		$('#control-buttons').on('click', 'li', function(e) {
-	 			var $this = $(this);
-	 			if(!(currentSlider === $this.index())) {
-	 				changePanel($this.index());
-	 			}
-	 		});
+function changeCurrentImage (newImage) {
+    currentImage.classList.add('fadeIn');
+    setTimeout(function () {
+        currentImage.classList.remove('fadeIn');
+    }, 500);
+    currentImage.attributes.src.value = this.attributes.src.value;
+    //listOfImages.forEach(image => image.classList.remove('current-image-list'));
+    listOfImages.forEach(function (image) {
+        image.classList.remove('current-image-list');
+    })
+    this.classList.add('current-image-list');
+}
 
-	 	}
+styleList();
 
-	 	// Funcion para activar el Slider
-	 	var activateSlider = function() {
-	 		SliderInterval = setInterval(pb.startSlider, pb.settings.duration);
-	 	}
+arrowLeft.addEventListener('click', goToLeft);
+arrowRight.addEventListener('click', goToRight);
 
-	 	// Funcion para la Animacion
-	 	pb.startSlider = function() {
-	 		var items = pb.items,
-	 			controls = $('#control-buttons li');
-	 		// Comprobamos si es el ultimo panel para reiniciar el conteo
-	 		if(nextSlider >= lengthSlider) {
-	 			nextSlider = 0;
-	 			currentSlider = lengthSlider-1;
-	 		}
+window.addEventListener('resize', function (e) {
+    styleList();
+});
 
-	 		controls.removeClass('active').eq(nextSlider).addClass('active');
-	 		items.panels.eq(currentSlider).fadeOut('slow');
-	 		items.panels.eq(nextSlider).fadeIn('slow');
+(function () {
+    if ( typeof NodeList.prototype.forEach === "function" ) return false;
+    NodeList.prototype.forEach = Array.prototype.forEach;
+})();
 
-	 		// Actualizamos los datos del slider
-	 		currentSlider = nextSlider;
-	 		nextSlider += 1;
-	 	}
-
-	 	// Funcion para Cambiar de Panel con Los Controles
-	 	var changePanel = function(id) {
-	 		clearInterval(SliderInterval);
-	 		var items = pb.items,
-	 			controls = $('#control-buttons li');
-	 		// Comprobamos si el ID esta disponible entre los paneles
-	 		if(id >= lengthSlider) {
-	 			id = 0;
-	 		} else if(id < 0) {
-	 			id = lengthSlider-1;
-	 		}
-
-	 		controls.removeClass('active').eq(id).addClass('active');
-	 		items.panels.eq(currentSlider).fadeOut('slow');
-	 		items.panels.eq(id).fadeIn('slow');
-
-	 		// Volvemos a actualizar los datos del slider
-	 		currentSlider = id;
-	 		nextSlider = id+1;
-	 		// Reactivamos nuestro slider
-	 		activateSlider();
-	 	}
-
-		return pb;
-	 }());
-
-	 SliderModule.init({duration: 4000});
-
+//listOfImages.forEach(image => image.addEventListener('click', changeCurrentImage));
+listOfImages.forEach(function(image) {
+    image.addEventListener('click', changeCurrentImage);
 });

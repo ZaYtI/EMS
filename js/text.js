@@ -33,17 +33,18 @@ function onlyNumber()
 
 
 function verif(){
-    date1 = document.getElementById("Date").value;
-    date2 = document.getElementById("DateA").value;
+    let date1 = document.getElementById("Date").value;
+    let date2 = document.getElementById("DateA").value;
+    //faire la difference entre date1 et la date du jour
     if (dateDiff(date1,date2)===false){
         if(date1===""|| date2===""){
             window.alert("La date de départ ou d'arriver n'est pas remplis")
             return false;
         }
-        else{
-        window.alert("Votre date de départ doit etre inferieur a la date de retour")
-        document.getElementById("DateA").value = "";
-        return false;
+        else if(date1 <= date2) {
+            window.alert("Votre date de départ doit etre inferieur a la date de retour")
+            document.getElementById("DateA").value = "";
+            return false;
         }
     }
     else{
