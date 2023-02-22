@@ -8,7 +8,6 @@ $message_entreprise = '<html">
             <a style="width: 100%; height: 80px;" href="https://zupimages.net/viewer.php?id=22/48/qyrk.png"><img src="https://zupimages.net/up/22/48/qyrk.png" alt="" /></a>
             <h2 style="text-align: center;">Demande de location</h2>
             <hr style="height: 5px; background-color: #d7d7d7; width: 80%; margin: auto auto; border: none; border-radius: 5px 5px 5px 5px">
-        <p><b>Sujet : </b>' . htmlspecialchars($_GET['car']) . '</p>
         <p><b>Sujet : </b>' . htmlspecialchars($_POST['sujet']) . '</p>
         <p><b>Email : </b>' . htmlspecialchars($_POST['email']) . '</p>
         <p><b>Nom : </b>' . htmlspecialchars($_POST['Name']) .'</p>
@@ -16,25 +15,24 @@ $message_entreprise = '<html">
         <p><b>Date de depart : </b>' . htmlspecialchars($_POST['Date']) .'</p>
         <p><b>Date de retour : </b>' . htmlspecialchars($_POST['DateA']) . '</p>
         <p><b>Message : </b>' . htmlspecialchars($_POST['area']) . '</p>
+        <p><b>Vehicule : </b>' . htmlspecialchars($_GET['car']) . '</p>
         <hr style="height: 5px; background-color: #d7d7d7; width: 80%; margin: 10px auto 10px auto; border: none; border-radius: 5px 5px 5px 5px;">
         <h3 style="text-align: center;">Merci de votre confiance</h3>
         </body>
         </html>';
 
 $message = '<html">
-            <body style="width: 589px; margin: auto;">
-            <a style="width: 100%; height: 80px; object-fit: cover;" href="https://zupimages.net/viewer.php?id=22/48/qyrk.png"><img src="https://zupimages.net/up/22/48/qyrk.png" alt="" /></a>
-            <h3 style="text-align: center;">Retour demande de location</h3>
+            <body style="width: 75%; margin: auto;">
+            <a style="width: 100%; height: 80px;" href="https://zupimages.net/viewer.php?id=22/48/qyrk.png"><img src="https://zupimages.net/up/22/48/qyrk.png" alt="" /></a>
+            <h2 style="text-align: center;">retour demande de location</h2>
             <hr style="height: 5px; background-color: #d7d7d7; width: 80%; margin: auto auto; border: none; border-radius: 5px 5px 5px 5px">
-        <p><b>Sujet : </b>' . htmlspecialchars($_GET['car']) . '</p>
-        <p style="text-align: center"><b>Sujet : </b>' . htmlspecialchars($_POST['sujet']) . '</p>
-        <p style="text-align: center"><b>Nom : </b>' . htmlspecialchars($_POST['Name']) .'</p>
-        <p style="text-align: center"><b>numero de telephone :</b>' . htmlspecialchars($_POST['Tel']) .'</p>
-        <p style="text-align: center"><b>Date de depart : </b>' . htmlspecialchars($_POST['Date']) .'</p>
-        <p style="text-align: center"><b>Date de retour : </b>' . htmlspecialchars($_POST['DateA']) . '</p>
-        <p style="text-align: center"><b>Message : </b>' . htmlspecialchars($_POST['area']) . '</p>
+        <p><b>Sujet : </b>' . htmlspecialchars($_POST['sujet']) . '</p>
+        <p><b>Date de depart : </b>' . htmlspecialchars($_POST['Date']) .'</p>
+        <p><b>Date de retour : </b>' . htmlspecialchars($_POST['DateA']) . '</p>
+        <p><b>Message : </b>' . htmlspecialchars($_POST['area']) . '</p>
+        <p><b>Vehicule : </b>' . htmlspecialchars($_GET['car']) . '</p>
         <hr style="height: 5px; background-color: #d7d7d7; width: 80%; margin: 10px auto 10px auto; border: none; border-radius: 5px 5px 5px 5px;">
-        <h4 style="text-align: center;">Merci de votre confiance</h4>
+        <h3 style="text-align: center;">Merci de votre confiance</h3>
         </body>
         </html>';
 $dest = "antonin.riquart@gmail.com";

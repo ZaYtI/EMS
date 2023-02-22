@@ -27,9 +27,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    text-align:center;
     font-size: 40px;
     color: black;
+    display: none;
 }
 
 #deuxieme .menu_deuxieme{
@@ -37,9 +37,9 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    text-align:center;
     font-size: 40px;
     color: black;
+    display: none;
 }
 #premiere .menu_premiere p{
     display: none;
@@ -49,13 +49,6 @@
 }
 
 @media screen and (max-width: 1180px){
-    #premiere .menu_premiere p{
-        display: block;
-    }
-
-    #deuxieme .menu_deuxieme p{
-        display: block;
-    }
     #all{
         grid-template-columns: 100%;
         grid-auto-rows: 50% 50%;
@@ -66,13 +59,15 @@
         width:100%;
         background-color:green;
     }
-
     #premiere .menu_premiere{
         font-size: 30px;
+        display: block;
+        animation: bounce 2s 7s  infinite ease-in-out;
     }
 
     #deuxieme .menu_deuxieme{
         font-size: 30px;
+        display: block;
     }
     #premiere::before,
     #premiere::after{
@@ -164,7 +159,7 @@
     color: #151515;
     font-size: 25px;
     opacity: 0;
-    transition: all .90  ease-in-out;
+    transition: all .90s  ease-in-out;
 }
 
 #deuxieme::after{
@@ -237,4 +232,10 @@
 
 .middle_Logo img{
     width: 350px;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {top: 50%}
+    40% {top: 55%}
+    60% {top: 50%}
 }
