@@ -8,6 +8,7 @@ $message_entreprise = '<html">
             <a style="width: 100%; height: 80px;" href="https://zupimages.net/viewer.php?id=22/48/qyrk.png"><img src="https://zupimages.net/up/22/48/qyrk.png" alt="" /></a>
             <h2 style="text-align: center;">Demande de location</h2>
             <hr style="height: 5px; background-color: #d7d7d7; width: 80%; margin: auto auto; border: none; border-radius: 5px 5px 5px 5px">
+        <p><b>Sujet : </b>' . htmlspecialchars($_GET['car']) . '</p>
         <p><b>Sujet : </b>' . htmlspecialchars($_POST['sujet']) . '</p>
         <p><b>Email : </b>' . htmlspecialchars($_POST['email']) . '</p>
         <p><b>Nom : </b>' . htmlspecialchars($_POST['Name']) .'</p>
@@ -25,6 +26,7 @@ $message = '<html">
             <a style="width: 100%; height: 80px; object-fit: cover;" href="https://zupimages.net/viewer.php?id=22/48/qyrk.png"><img src="https://zupimages.net/up/22/48/qyrk.png" alt="" /></a>
             <h3 style="text-align: center;">Retour demande de location</h3>
             <hr style="height: 5px; background-color: #d7d7d7; width: 80%; margin: auto auto; border: none; border-radius: 5px 5px 5px 5px">
+        <p><b>Sujet : </b>' . htmlspecialchars($_GET['car']) . '</p>
         <p style="text-align: center"><b>Sujet : </b>' . htmlspecialchars($_POST['sujet']) . '</p>
         <p style="text-align: center"><b>Nom : </b>' . htmlspecialchars($_POST['Name']) .'</p>
         <p style="text-align: center"><b>numero de telephone :</b>' . htmlspecialchars($_POST['Tel']) .'</p>
