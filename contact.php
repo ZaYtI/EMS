@@ -43,7 +43,12 @@
         <a href="208.html"><i class="fa-solid fa-circle-arrow-left"></i></a>
         <h1>NOUS CONTACTER</h1>
     </div>
-        <form method="post" action="mail.php?car=<?php echo $_GET['car']?>" onsubmit=" return verif()">
+        <form method="post" action="mail.php?<?php if (isset($_GET['car'])){
+            echo 'car='.$_GET['car'];
+
+        }else{
+            echo 'abonnement='.$_GET['abonnement'];
+        }?>">
             <div class="start_form">
                 <div class="Nom">
                     <label for="Nom">Nom :</label>
@@ -58,7 +63,7 @@
                     <input type="date" name="Date" id="Date" value="Date">
                 </div>
                 <div class="Date_Arriver">
-                    <label for="DateA" > Choisir la date de retour :</label>
+                    <label for="DateA" > Choisir la date de fin :</label>
                     <input type="date" name="DateA" id="DateA">
                 </div>
                 <div class="email">
@@ -75,6 +80,30 @@
                     <textarea  name="area" id="area" placeholder="Entrer vos information complémentaire"></textarea>
                 </div>
             <div class="bouton">
+                <?php
+                    if(isset($_GET['success'])){
+                        if($_GET['success'] == 0){
+                            echo '<p  class="success" style="color: green; text-align: center; padding-top: 10px;">Votre message a bien été envoyé !</p>';
+                        }
+                        else{
+                            if (isset($_GET['error'])){
+                                $error = $_GET['error'];
+                                if($error == 0){
+                                    echo '<p  class="success" style="color: red; text-align: center; padding-top: 10px;">Verifier les dates !</p>';
+                                }
+                                elseif ($error == 2){
+                                    echo '<p  class="success" style="color: red; text-align: center; padding-top: 10px;">Veillez a remplir chaque champ !</p>';
+                                }
+                                elseif ($error == 3){
+                                    echo '<p  class="success" style="color: red; text-align: center; padding-top: 10px;">Erreur lors de l envoie du mail !</p>';
+                                }
+                                elseif ($error == 1){
+                                    echo '<p  class="success" style="color: red; text-align: center; padding-top: 10px;">Le mail n est pas correct !</p>';
+                                }
+                            }
+                        }
+                    }
+                ?>
                 <button id="valid" type="submit">VALIDER</button>
                 <button type="reset">ANNULER</button>
             </div>
@@ -104,5 +133,10 @@
     <div class="localisation">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.479940033915!2d2.6061620159114334!3d50.45078689522143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47dd3d7b00f19f1f%3A0x510a462f4b60fa32!2s105%20Allee%20Raymond%20Derancy%2C%2062620%20Barlin%2C%20France!5e0!3m2!1sfr!2slu!4v1677076847292!5m2!1sfr!2slu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    </div>
 </footer>
+<?php if(isset($_GET['success'])):  ?>
+<script>
+    window.history.replaceState({}, document.title, window.location.pathname);
+</script>
+<?php endif ?>
 <script src="js/text.js"></script>
 </html>
